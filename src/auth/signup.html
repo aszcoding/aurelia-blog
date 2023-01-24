@@ -1,0 +1,8 @@
+<template>
+  <h1>Sign Up</h1>
+  
+  <form submit.delegate="signup()"> <!--when form is submitted, we'll use signup method on view model-->
+    <input type="text" placeholder="Name" value.bind="name" />
+    <button type="submit">Sign Up</button>
+  </form>
+</template>

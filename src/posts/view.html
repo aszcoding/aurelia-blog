@@ -1,0 +1,9 @@
+<template>
+  <require from="../resources/elements/blog-post"></require>
+
+  <blog-post post.bind="post"></blog-post> 
+
+  <a route-href="route:post-edit; params.bind: { slug: post.slug }" class="btn btn-primary" if.bind="authService.currentUser === post.author"> <!--if current user is author, then they can edit post-->
+    Edit Post
+  </a>
+</template>
